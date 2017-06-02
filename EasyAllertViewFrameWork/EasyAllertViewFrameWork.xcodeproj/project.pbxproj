@@ -77,11 +77,8 @@
 			children = (
 				EB3B9AD71EE1D8260096FA07 /* EasyAllertViewFrameWork.h */,
 				EB3B9AD81EE1D8260096FA07 /* Info.plist */,
-<<<<<<< HEAD
 				EB3B9B281EE1DC5A0096FA07 /* EasyAction.swift */,
-=======
-				974A9E9C1EE1DC7F001B8848 /* AlertController.swift */,
->>>>>>> 88c6e85edb7af943634d6298d774bbab8ca256cb
+				974A9E9C1EE1DC7F001B8848 /* AlertController.swift */
 			);
 			path = EasyAllertViewFrameWork;
 			sourceTree = "<group>";
@@ -208,11 +205,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-<<<<<<< HEAD
 				EB3B9B291EE1DC5A0096FA07 /* EasyAction.swift in Sources */,
-=======
-				974A9E9D1EE1DC7F001B8848 /* AlertController.swift in Sources */,
->>>>>>> 88c6e85edb7af943634d6298d774bbab8ca256cb
+				974A9E9D1EE1DC7F001B8848 /* AlertController.swift in Sources */
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
