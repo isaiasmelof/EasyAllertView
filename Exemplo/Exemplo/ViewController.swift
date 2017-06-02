@@ -20,6 +20,19 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func createAlert(_ sender: Any) {
+        
+        
+        
+    }
+    
+    
+    @IBAction func createActionSeet(_ sender: Any) {
+        
+        
+        
+    }
+    
 
 }
 
