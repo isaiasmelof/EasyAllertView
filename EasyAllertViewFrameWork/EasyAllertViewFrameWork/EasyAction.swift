@@ -8,17 +8,27 @@
 
 import UIKit
 
+protocol EasyActionDelegate{
+    func actionWasSelected(selectedAction:EasyAction)
+}
+
 class EasyAction: NSObject {
     
-    var action:UIAlertAction
+    var action:UIAlertAction?
+    
+    var delegate:EasyActionDelegate?
+    
+    
     
     init(usingTitle title:String, andAlerActionStyle type:UIAlertActionStyle) {
-     
-        action = UIAlertAction(title: title, style: type, handler: { (UIAlertAction) in
-            
-        })
         
         super.init()
+        
+        action = UIAlertAction(title: title, style: type, handler: { (UIAlertAction) in
+            
+            self.delegate?.actionWasSelected(selectedAction: self)
+            
+        })
     }
 }
 
