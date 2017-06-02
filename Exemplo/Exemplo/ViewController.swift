@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, EasyAlertControllerDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,6 +22,10 @@ class ViewController: UIViewController {
 
     @IBAction func createAlert(_ sender: Any) {
         
+        let newAlert:EasyAlertController = EasyAlertController(title: "Easy", menssage: "easy peasy lemon squeezy", actions: [EasyAction(usingTitle: "OK", andAlerActionStyle: UIAlertActionStyle.default), EasyAction(usingTitle: "Cancel", andAlerActionStyle: UIAlertActionStyle.cancel)], style: UIAlertControllerStyle.alert)
+        
+        
+        newAlert.showEasyAlert(controller: self)
         
         
     }
@@ -29,10 +33,17 @@ class ViewController: UIViewController {
     
     @IBAction func createActionSeet(_ sender: Any) {
         
+        let newAlert:EasyAlertController = EasyAlertController(title: "Easy", menssage: "easy peasy lemon squeezy", actions: [EasyAction(usingTitle: "OK", andAlerActionStyle: UIAlertActionStyle.default), EasyAction(usingTitle: "Cancel", andAlerActionStyle: UIAlertActionStyle.cancel)], style: UIAlertControllerStyle.actionSheet)
         
+        newAlert.showEasyAlert(controller: self)
         
     }
     
-
+    func userDidSelectAction(action: EasyAction, atIndex index: Int) {
+        
+        print("user selected action at index: \(index) for action: \(action.action?.title!)")
+        
+    }
+    
 }
 

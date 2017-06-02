@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "EB3B9AD31EE1D8260096FA07"
+               BlueprintIdentifier = "EB930E6C1EE1FBFE00B0389F"
                BuildableName = "EasyAllertViewFrameWork.framework"
                BlueprintName = "EasyAllertViewFrameWork"
                ReferencedContainer = "container:EasyAllertViewFrameWork.xcodeproj">
@@ -28,26 +28,7 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "EB3B9ADC1EE1D8260096FA07"
-               BuildableName = "EasyAllertViewFrameWorkTests.xctest"
-               BlueprintName = "EasyAllertViewFrameWorkTests"
-               ReferencedContainer = "container:EasyAllertViewFrameWork.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "EB3B9AD31EE1D8260096FA07"
-            BuildableName = "EasyAllertViewFrameWork.framework"
-            BlueprintName = "EasyAllertViewFrameWork"
-            ReferencedContainer = "container:EasyAllertViewFrameWork.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -64,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "EB3B9AD31EE1D8260096FA07"
+            BlueprintIdentifier = "EB930E6C1EE1FBFE00B0389F"
             BuildableName = "EasyAllertViewFrameWork.framework"
             BlueprintName = "EasyAllertViewFrameWork"
             ReferencedContainer = "container:EasyAllertViewFrameWork.xcodeproj">
@@ -82,7 +63,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "EB3B9AD31EE1D8260096FA07"
+            BlueprintIdentifier = "EB930E6C1EE1FBFE00B0389F"
             BuildableName = "EasyAllertViewFrameWork.framework"
             BlueprintName = "EasyAllertViewFrameWork"
             ReferencedContainer = "container:EasyAllertViewFrameWork.xcodeproj">

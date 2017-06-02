@@ -8,9 +8,6 @@
 
 import UIKit
 
-<<<<<<< HEAD
-class EasyAction: NSObject {
-=======
 protocol EasyActionDelegate{
     func actionWasSelected(selectedAction:EasyAction)
 }
@@ -21,19 +18,9 @@ class EasyAction: NSObject {
     
     var delegate:EasyActionDelegate?
     
->>>>>>> a743ee33bc408d775c8c56a292f486b66ff71067
     
-    var action:UIAlertAction
     
     init(usingTitle title:String, andAlerActionStyle type:UIAlertActionStyle) {
-<<<<<<< HEAD
-     
-        action = UIAlertAction(title: title, style: type, handler: { (UIAlertAction) in
-            
-        })
-        
-        super.init()
-=======
         
         super.init()
         
@@ -42,7 +29,6 @@ class EasyAction: NSObject {
             self.delegate?.actionWasSelected(selectedAction: self)
             
         })
->>>>>>> a743ee33bc408d775c8c56a292f486b66ff71067
     }
 }
 

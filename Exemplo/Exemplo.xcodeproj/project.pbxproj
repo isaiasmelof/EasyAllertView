@@ -14,6 +14,11 @@
 		EB3B9B051EE1D9E70096FA07 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB3B9B031EE1D9E70096FA07 /* LaunchScreen.storyboard */; };
 		EB3B9B101EE1D9E70096FA07 /* ExemploTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3B9B0F1EE1D9E70096FA07 /* ExemploTests.swift */; };
 		EB3B9B1B1EE1D9E70096FA07 /* ExemploUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3B9B1A1EE1D9E70096FA07 /* ExemploUITests.swift */; };
+		EB930E851EE1FC4F00B0389F /* EasyAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB930E7E1EE1FC4F00B0389F /* EasyAction.swift */; };
+		EB930E861EE1FC4F00B0389F /* EasyAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB930E7F1EE1FC4F00B0389F /* EasyAlertController.swift */; };
+		EB930E871EE1FC4F00B0389F /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EB930E811EE1FC4F00B0389F /* Info.plist */; };
+		EB930E8B1EE1FC5B00B0389F /* EasyAllertViewFrameWork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB930E8A1EE1FC4F00B0389F /* EasyAllertViewFrameWork.framework */; };
+		EB930E8C1EE1FC5B00B0389F /* EasyAllertViewFrameWork.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EB930E8A1EE1FC4F00B0389F /* EasyAllertViewFrameWork.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,7 +36,35 @@
 			remoteGlobalIDString = EB3B9AF61EE1D9E70096FA07;
 			remoteInfo = Exemplo;
 		};
+		EB930E891EE1FC4F00B0389F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EB930E821EE1FC4F00B0389F /* EasyAllertViewFrameWork.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EB930E6D1EE1FBFE00B0389F;
+			remoteInfo = EasyAllertViewFrameWork;
+		};
+		EB930E8D1EE1FC5B00B0389F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EB930E821EE1FC4F00B0389F /* EasyAllertViewFrameWork.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = EB930E6C1EE1FBFE00B0389F;
+			remoteInfo = EasyAllertViewFrameWork;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EBCBAA061EE1F9EF0016A026 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				EB930E8C1EE1FC5B00B0389F /* EasyAllertViewFrameWork.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		EB3B9AF71EE1D9E70096FA07 /* Exemplo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Exemplo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,6 +80,11 @@
 		EB3B9B161EE1D9E70096FA07 /* ExemploUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExemploUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB3B9B1A1EE1D9E70096FA07 /* ExemploUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExemploUITests.swift; sourceTree = "<group>"; };
 		EB3B9B1C1EE1D9E70096FA07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB930E7E1EE1FC4F00B0389F /* EasyAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EasyAction.swift; sourceTree = "<group>"; };
+		EB930E7F1EE1FC4F00B0389F /* EasyAlertController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EasyAlertController.swift; sourceTree = "<group>"; };
+		EB930E801EE1FC4F00B0389F /* EasyAllertViewFrameWork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EasyAllertViewFrameWork.h; sourceTree = "<group>"; };
+		EB930E811EE1FC4F00B0389F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB930E821EE1FC4F00B0389F /* EasyAllertViewFrameWork.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = EasyAllertViewFrameWork.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB930E8B1EE1FC5B00B0389F /* EasyAllertViewFrameWork.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,6 +136,7 @@
 		EB3B9AF91EE1D9E70096FA07 /* Exemplo */ = {
 			isa = PBXGroup;
 			children = (
+				EB930E7C1EE1FC4F00B0389F /* EasyAllertViewFrameWork */,
 				EB3B9AFA1EE1D9E70096FA07 /* AppDelegate.swift */,
 				EB3B9AFC1EE1D9E70096FA07 /* ViewController.swift */,
 				EB3B9AFE1EE1D9E70096FA07 /* Main.storyboard */,
@@ -125,6 +165,34 @@
 			path = ExemploUITests;
 			sourceTree = "<group>";
 		};
+		EB930E7C1EE1FC4F00B0389F /* EasyAllertViewFrameWork */ = {
+			isa = PBXGroup;
+			children = (
+				EB930E7D1EE1FC4F00B0389F /* EasyAllertViewFrameWork */,
+				EB930E821EE1FC4F00B0389F /* EasyAllertViewFrameWork.xcodeproj */,
+			);
+			path = EasyAllertViewFrameWork;
+			sourceTree = "<group>";
+		};
+		EB930E7D1EE1FC4F00B0389F /* EasyAllertViewFrameWork */ = {
+			isa = PBXGroup;
+			children = (
+				EB930E7E1EE1FC4F00B0389F /* EasyAction.swift */,
+				EB930E7F1EE1FC4F00B0389F /* EasyAlertController.swift */,
+				EB930E801EE1FC4F00B0389F /* EasyAllertViewFrameWork.h */,
+				EB930E811EE1FC4F00B0389F /* Info.plist */,
+			);
+			path = EasyAllertViewFrameWork;
+			sourceTree = "<group>";
+		};
+		EB930E831EE1FC4F00B0389F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EB930E8A1EE1FC4F00B0389F /* EasyAllertViewFrameWork.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,10 +203,12 @@
 				EB3B9AF31EE1D9E70096FA07 /* Sources */,
 				EB3B9AF41EE1D9E70096FA07 /* Frameworks */,
 				EB3B9AF51EE1D9E70096FA07 /* Resources */,
+				EBCBAA061EE1F9EF0016A026 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				EB930E8E1EE1FC5B00B0389F /* PBXTargetDependency */,
 			);
 			name = Exemplo;
 			productName = Exemplo;
@@ -221,6 +291,12 @@
 			mainGroup = EB3B9AEE1EE1D9E70096FA07;
 			productRefGroup = EB3B9AF81EE1D9E70096FA07 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = EB930E831EE1FC4F00B0389F /* Products */;
+					ProjectRef = EB930E821EE1FC4F00B0389F /* EasyAllertViewFrameWork.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				EB3B9AF61EE1D9E70096FA07 /* Exemplo */,
@@ -230,11 +306,22 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		EB930E8A1EE1FC4F00B0389F /* EasyAllertViewFrameWork.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = EasyAllertViewFrameWork.framework;
+			remoteRef = EB930E891EE1FC4F00B0389F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		EB3B9AF51EE1D9E70096FA07 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB930E871EE1FC4F00B0389F /* Info.plist in Resources */,
 				EB3B9B051EE1D9E70096FA07 /* LaunchScreen.storyboard in Resources */,
 				EB3B9B021EE1D9E70096FA07 /* Assets.xcassets in Resources */,
 				EB3B9B001EE1D9E70096FA07 /* Main.storyboard in Resources */,
@@ -262,7 +349,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB930E851EE1FC4F00B0389F /* EasyAction.swift in Sources */,
 				EB3B9AFD1EE1D9E70096FA07 /* ViewController.swift in Sources */,
+				EB930E861EE1FC4F00B0389F /* EasyAlertController.swift in Sources */,
 				EB3B9AFB1EE1D9E70096FA07 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -295,6 +384,11 @@
 			isa = PBXTargetDependency;
 			target = EB3B9AF61EE1D9E70096FA07 /* Exemplo */;
 			targetProxy = EB3B9B171EE1D9E70096FA07 /* PBXContainerItemProxy */;
+		};
+		EB930E8E1EE1FC5B00B0389F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = EasyAllertViewFrameWork;
+			targetProxy = EB930E8D1EE1FC5B00B0389F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -416,8 +510,13 @@
 		EB3B9B201EE1D9E70096FA07 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = VY9L7K3A35;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Exemplo",
+				);
 				INFOPLIST_FILE = Exemplo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.isaiasmelof.Exemplo;
@@ -429,8 +528,13 @@
 		EB3B9B211EE1D9E70096FA07 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = VY9L7K3A35;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Exemplo",
+				);
 				INFOPLIST_FILE = Exemplo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.isaiasmelof.Exemplo;
@@ -516,6 +620,7 @@
 				EB3B9B211EE1D9E70096FA07 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EB3B9B221EE1D9E70096FA07 /* Build configuration list for PBXNativeTarget "ExemploTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +629,7 @@
 				EB3B9B241EE1D9E70096FA07 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EB3B9B251EE1D9E70096FA07 /* Build configuration list for PBXNativeTarget "ExemploUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +638,7 @@
 				EB3B9B271EE1D9E70096FA07 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
