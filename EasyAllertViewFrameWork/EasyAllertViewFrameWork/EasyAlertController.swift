@@ -8,28 +8,40 @@
 
 import UIKit
 
-class AlertController: UIAlertController {
+protocol EasyAlertControllerDelegate {
+    func userDidSelectAction (action: EasyAction, atIndex index: Int)
+}
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+class EasyAlertController: NSObject {
+    var title: String = ""
+    var menssage: String = ""
+    var actions: [EasyAction] = [EasyAction(usingTitle: "Ok", andAlerActionStyle: .default)]
+    
+    var style: UIAlertControllerStyle = UIAlertControllerStyle.alert
+    
+    var delegate: EasyAlertControllerDelegate?
+    
+    init(title: String, menssage: String, actions: [EasyAction], style: UIAlertControllerStyle) {
+        self.actions = actions
+        self.menssage = menssage
+        self.title = title
+        self.style = style
+        super.init()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func showEasyAlert(controller: UIViewController) {
+        let alert: UIAlertController = UIAlertController(title: self.title, message: self.menssage, preferredStyle: self.style)
+        
+        controller.present(alert, animated: true, completion: nil)
     }
-    */
+    
+    
+    
+}
 
+extension EasyAlertController: EasyActionDelegate {
+    
+    func actionWasSelected(selectedAction:EasyAction) {
+        delegate?.userDidSelectAction(action: selectedAction, atIndex: self.actions.index(of: selectedAction)!)
+    }
 }
