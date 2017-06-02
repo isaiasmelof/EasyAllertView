@@ -8,10 +8,18 @@
 
 import UIKit
 
-class EasyAction: UIAlertAction {
-
+class EasyAction: NSObject {
     
+    var action:UIAlertAction
     
-    
-    
+    init(usingTitle title:String, andAlerActionStyle type:UIAlertActionStyle) {
+     
+        
+        action = UIAlertAction(title: title, style: type, handler: { (UIAlertAction) in
+            
+        })
+        
+        super.init()
+    }
 }
+
