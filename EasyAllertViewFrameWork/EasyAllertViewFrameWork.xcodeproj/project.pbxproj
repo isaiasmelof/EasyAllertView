@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		974A9E9D1EE1DC7F001B8848 /* AlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 974A9E9C1EE1DC7F001B8848 /* AlertController.swift */; };
+		974A9E9D1EE1DC7F001B8848 /* EasyAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 974A9E9C1EE1DC7F001B8848 /* EasyAlertController.swift */; };
 		EB3B9ADE1EE1D8260096FA07 /* EasyAllertViewFrameWork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB3B9AD41EE1D8260096FA07 /* EasyAllertViewFrameWork.framework */; };
 		EB3B9AE31EE1D8260096FA07 /* EasyAllertViewFrameWorkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3B9AE21EE1D8260096FA07 /* EasyAllertViewFrameWorkTests.swift */; };
 		EB3B9AE51EE1D8260096FA07 /* EasyAllertViewFrameWork.h in Headers */ = {isa = PBXBuildFile; fileRef = EB3B9AD71EE1D8260096FA07 /* EasyAllertViewFrameWork.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -25,7 +25,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		974A9E9C1EE1DC7F001B8848 /* AlertController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertController.swift; sourceTree = "<group>"; };
+		974A9E9C1EE1DC7F001B8848 /* EasyAlertController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EasyAlertController.swift; sourceTree = "<group>"; };
 		EB3B9AD41EE1D8260096FA07 /* EasyAllertViewFrameWork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EasyAllertViewFrameWork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB3B9AD71EE1D8260096FA07 /* EasyAllertViewFrameWork.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EasyAllertViewFrameWork.h; sourceTree = "<group>"; };
 		EB3B9AD81EE1D8260096FA07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -78,7 +78,7 @@
 				EB3B9AD71EE1D8260096FA07 /* EasyAllertViewFrameWork.h */,
 				EB3B9AD81EE1D8260096FA07 /* Info.plist */,
 				EB3B9B281EE1DC5A0096FA07 /* EasyAction.swift */,
-				974A9E9C1EE1DC7F001B8848 /* AlertController.swift */
+				974A9E9C1EE1DC7F001B8848 /* EasyAlertController.swift */,
 			);
 			path = EasyAllertViewFrameWork;
 			sourceTree = "<group>";
@@ -206,7 +206,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB3B9B291EE1DC5A0096FA07 /* EasyAction.swift in Sources */,
-				974A9E9D1EE1DC7F001B8848 /* AlertController.swift in Sources */
+				974A9E9D1EE1DC7F001B8848 /* EasyAlertController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
