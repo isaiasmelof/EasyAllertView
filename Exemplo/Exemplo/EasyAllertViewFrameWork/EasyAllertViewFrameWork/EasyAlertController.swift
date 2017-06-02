@@ -32,6 +32,10 @@ class EasyAlertController: NSObject {
     func showEasyAlert(controller: UIViewController) {
         let alert: UIAlertController = UIAlertController(title: self.title, message: self.menssage, preferredStyle: self.style)
         
+        for index in 0..<self.actions.count {
+            alert.addAction(self.actions[index].action!)
+        }
+        
         controller.present(alert, animated: true, completion: nil)
     }
     

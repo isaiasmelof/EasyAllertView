@@ -22,7 +22,18 @@ class ViewController: UIViewController, EasyAlertControllerDelegate {
 
     @IBAction func createAlert(_ sender: Any) {
         
-        let newAlert:EasyAlertController = EasyAlertController(title: "Easy", menssage: "easy peasy lemon squeezy", actions: [EasyAction(usingTitle: "OK", andAlerActionStyle: UIAlertActionStyle.default), EasyAction(usingTitle: "Cancel", andAlerActionStyle: UIAlertActionStyle.cancel)], style: UIAlertControllerStyle.alert)
+        
+        
+        var actionsArray:Array<EasyAction> = Array()
+        
+        let action1 = EasyAction(usingTitle: "OK", andAlerActionStyle: UIAlertActionStyle.default)
+        let action2 = EasyAction(usingTitle: "Cancel", andAlerActionStyle: UIAlertActionStyle.cancel)
+        
+        //add actions to array
+        actionsArray.append(action1)
+        actionsArray.append(action2)
+        
+        let newAlert:EasyAlertController = EasyAlertController(title: "Easy", menssage: "easy peasy lemon squeezy", actions: actionsArray, style: UIAlertControllerStyle.alert)
         
         
         newAlert.showEasyAlert(controller: self)
@@ -33,7 +44,16 @@ class ViewController: UIViewController, EasyAlertControllerDelegate {
     
     @IBAction func createActionSeet(_ sender: Any) {
         
-        let newAlert:EasyAlertController = EasyAlertController(title: "Easy", menssage: "easy peasy lemon squeezy", actions: [EasyAction(usingTitle: "OK", andAlerActionStyle: UIAlertActionStyle.default), EasyAction(usingTitle: "Cancel", andAlerActionStyle: UIAlertActionStyle.cancel)], style: UIAlertControllerStyle.actionSheet)
+        var actionsArray:Array<EasyAction> = Array()
+        
+        let action1 = EasyAction(usingTitle: "OK", andAlerActionStyle: UIAlertActionStyle.default)
+        let action2 = EasyAction(usingTitle: "Cancel", andAlerActionStyle: UIAlertActionStyle.cancel)
+        
+        //add actions to array
+        actionsArray.append(action1)
+        actionsArray.append(action2)
+        
+        let newAlert:EasyAlertController = EasyAlertController(title: "Easy", menssage: "easy peasy lemon squeezy", actions: actionsArray, style: UIAlertControllerStyle.actionSheet)
         
         newAlert.showEasyAlert(controller: self)
         
