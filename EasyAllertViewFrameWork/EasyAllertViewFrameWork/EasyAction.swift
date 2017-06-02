@@ -14,7 +14,6 @@ class EasyAction: NSObject {
     
     init(usingTitle title:String, andAlerActionStyle type:UIAlertActionStyle) {
      
-        
         action = UIAlertAction(title: title, style: type, handler: { (UIAlertAction) in
             
         })
