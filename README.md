@@ -3,7 +3,6 @@
 Plataforma: iOS
 
 ![png](https://github.com/isaiasmelof/EasyAllertView/blob/master/images/img1.png)
-![png](https://github.com/isaiasmelof/EasyAllertView/blob/master/images/img2.png)
 
 ## Como Usar
 
