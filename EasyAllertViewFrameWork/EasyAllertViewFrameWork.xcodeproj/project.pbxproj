@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		974A9E9D1EE1DC7F001B8848 /* AlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 974A9E9C1EE1DC7F001B8848 /* AlertController.swift */; };
 		EB3B9ADE1EE1D8260096FA07 /* EasyAllertViewFrameWork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB3B9AD41EE1D8260096FA07 /* EasyAllertViewFrameWork.framework */; };
 		EB3B9AE31EE1D8260096FA07 /* EasyAllertViewFrameWorkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3B9AE21EE1D8260096FA07 /* EasyAllertViewFrameWorkTests.swift */; };
 		EB3B9AE51EE1D8260096FA07 /* EasyAllertViewFrameWork.h in Headers */ = {isa = PBXBuildFile; fileRef = EB3B9AD71EE1D8260096FA07 /* EasyAllertViewFrameWork.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -23,6 +24,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		974A9E9C1EE1DC7F001B8848 /* AlertController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertController.swift; sourceTree = "<group>"; };
 		EB3B9AD41EE1D8260096FA07 /* EasyAllertViewFrameWork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EasyAllertViewFrameWork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB3B9AD71EE1D8260096FA07 /* EasyAllertViewFrameWork.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EasyAllertViewFrameWork.h; sourceTree = "<group>"; };
 		EB3B9AD81EE1D8260096FA07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -73,6 +75,7 @@
 			children = (
 				EB3B9AD71EE1D8260096FA07 /* EasyAllertViewFrameWork.h */,
 				EB3B9AD81EE1D8260096FA07 /* Info.plist */,
+				974A9E9C1EE1DC7F001B8848 /* AlertController.swift */,
 			);
 			path = EasyAllertViewFrameWork;
 			sourceTree = "<group>";
@@ -149,6 +152,7 @@
 					EB3B9AD31EE1D8260096FA07 = {
 						CreatedOnToolsVersion = 8.3.1;
 						DevelopmentTeam = VY9L7K3A35;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 					EB3B9ADC1EE1D8260096FA07 = {
@@ -198,6 +202,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				974A9E9D1EE1DC7F001B8848 /* AlertController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,6 +329,7 @@
 		EB3B9AE91EE1D8260096FA07 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = VY9L7K3A35;
@@ -336,6 +342,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.isaiasmelof.EasyAllertViewFrameWork;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -343,6 +350,7 @@
 		EB3B9AEA1EE1D8260096FA07 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = VY9L7K3A35;
@@ -362,6 +370,7 @@
 		EB3B9AEC1EE1D8260096FA07 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = VY9L7K3A35;
 				INFOPLIST_FILE = EasyAllertViewFrameWorkTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -374,6 +383,7 @@
 		EB3B9AED1EE1D8260096FA07 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = VY9L7K3A35;
 				INFOPLIST_FILE = EasyAllertViewFrameWorkTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -402,6 +412,7 @@
 				EB3B9AEA1EE1D8260096FA07 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EB3B9AEB1EE1D8260096FA07 /* Build configuration list for PBXNativeTarget "EasyAllertViewFrameWorkTests" */ = {
 			isa = XCConfigurationList;
@@ -410,6 +421,7 @@
 				EB3B9AED1EE1D8260096FA07 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
